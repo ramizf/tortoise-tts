@@ -1,0 +1,28 @@
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title>Voice cloner</title>
+        <H2>VOICE CLONER</H2>
+   </head>
+   <body style ="background-color: beige">
+      <form action = "/uploaded" method = "POST" enctype = "multipart/form-data">
+         <p><label>Upload input voice samples(.wav format):</label></p>
+         <input type = "file" id="file" name = "file" multiple required>
+         <input type = "submit" value = upload>
+      </form>
+
+      <form method="POST" action="/preset_and_text">
+          <p><label>Select Your Preset :</label></p>
+          <select id ="preset" name="preset">
+          <option value="fast">fast</option>
+          <option value="standard">standard</option>
+          <option value="high_quality">high_quality</option>
+          </select>
+
+          <p><label>Enter text here:</label></p>
+          <textarea id="text" name="text" rows="10" cols="50">input text</textarea>
+          <br><br>
+          <input type="submit" value="Submit">
+
+       </body>
+</html>

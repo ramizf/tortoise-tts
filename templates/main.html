@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice cloner</title>
+</head>
+
+<body>
+<h1>Voice cloner</h1>
+
+<form action="/action_page.php">
+  <p><label>Enter text here:</label></p>
+  <textarea id="w3review" name="w3review" rows="4" cols="50">input text</textarea>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+
+<form>
+  <p><label>Select Your Preset :</label></p>
+  <select id ="preset" name="preset">
+    <option value="fast">fast</option>
+    <option value="standard">standard</option>
+    <option value="high_quality">high_quality</option>
+  </select>
+</form>
+
+<form action="/action_page.php">
+  <p><label>Upload your voice samples :</label></p>
+  <input type="file" id="files" name="files" multiple>
+  <input type="submit" value="upload">
+</form>
+
+
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the
+server called "action_page.php".</p>
+
+</body>
+</html>
